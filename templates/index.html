@@ -30,9 +30,8 @@
 
     {% for entry in info %}
     <div class="card">
-
         <div class="delete-wrapper">
-            <form action="#" method="POST">
+            <form action="/delete/{{entry['city_name']}}" method="POST">
                 <input type="hidden" name="id" value="">
                 <button class="delete-button" type="submit">&#10006;</button>
             </form>
